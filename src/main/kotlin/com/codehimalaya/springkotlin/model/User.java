@@ -2,16 +2,36 @@ package com.codehimalaya.springkotlin.model;
 
 public class User {
 
+    private String username;
     private String firstName;
     private String lastName;
     private String password;
     private String email;
+    private String accountNumber;
 
-    public User(String firstName, String lastName, String password, String email) {
+    public User(String username, String firstName, String lastName, String password, String email, String accountNumber) {
+        this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getFirstName() {
