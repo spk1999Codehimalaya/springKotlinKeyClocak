@@ -1,6 +1,6 @@
 package com.codehimalaya.springkotlin.model;
 
-public class User {
+public class UserData {
 
     private String username;
     private String firstName;
@@ -8,14 +8,24 @@ public class User {
     private String password;
     private String email;
     private String accountNumber;
+    private String phoneNumber;
 
-    public User(String username, String firstName, String lastName, String password, String email, String accountNumber) {
+    public UserData(String username, String firstName, String lastName, String password, String email, String accountNumber, String phoneNumber) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
         this.accountNumber = accountNumber;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getAccountNumber() {
